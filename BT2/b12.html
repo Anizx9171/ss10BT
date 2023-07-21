@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = +prompt(`Nhập số tiền Bạn muốn vay`)
+        let s = +prompt(`Nhập thời hạn vay`)
+        const p = 0.1
+        let pay = a + Math.pow((1 + p / 12), s);
+        alert(`tổng số tiền bạn phải trả sau ${s} tháng là: ${Math.round(pay)}đ`)
+    </script>
+</body>
+
+</html>

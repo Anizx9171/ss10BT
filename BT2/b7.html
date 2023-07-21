@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = +prompt(`Nhập a cho biểu thức \"ax^2 + bx + c = 0\"`);
+        let b = +prompt(`Nhập b cho biểu thức \"ax^2 + bx + c = 0\"`);
+        let c = +prompt(`Nhập c cho biểu thức \"ax^2 + bx + c = 0\"`);
+        if (a = 0) {
+            alert('Pt không phải pt bậc 2')
+        } else {
+            let delta = b * b - 4 * a * c;
+            if (delta == 0) {
+                alert(`Pt có 1 nghiệm kép là: ${-b / 2 * a}`)
+            }
+            else if (delta > 0) {
+                alert(`Pt có 2 nghiệm là: x1\=${(-b + Math.sqrt(delta)) / (2 * a)}, x2\=${(-b - Math.sqrt(delta)) / (2 * a)}`)
+            }
+            else {
+                alert("pt vô nghiệm\!")
+            }
+        }
+    </script>
+</body>
+
+</html>
